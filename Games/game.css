@@ -1,0 +1,74 @@
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+.welcome{
+
+    background-color:#def;
+    background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
+    radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
+    background-size:80px 80px;
+    background-position:0 0, 40px 40px;
+}
+
+h1  {
+    color:  #FFC83D; !important;
+    font-weight: bold !important;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 2px black;
+
+}
+#invitation {
+     color: #fff !important;
+     font-weight: bold;
+     font-family: 'Pacifico', cursive;
+     text-shadow: 1px 1px 2px black;
+
+}
+#intro{
+    height: 50%;
+    width: 80%;
+    background-color: #0069D9;
+    margin: auto;
+}
+
+.gray {
+    background-color: #0069D9;
+}
+.big {
+     font-weight: bold !important;
+     font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+}
+#totop{
+    color: #55595C;
+}

@@ -1,0 +1,58 @@
+body {
+  background: url(landscape.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.flydemo {
+   background: url(cloud.png) repeat-x;
+   width: 90%; margin: 1em auto; max-width:800px; height: 110px;
+   animation: flybirds 15s linear infinite;
+}
+
+@keyframes flybirds {
+	from { background-position: 0px 0px }
+	to { background-position: 300px 0px }
+}
+
+#letter {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#envelope{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    text-decoration: none;
+}
+/* unvisited link */
+/* visited link */
+a:link, a:visited {
+  color: #E7000D;
+  text-shadow: 1px 1px 1px #555;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FC4742;
+}
+
+/* selected link */
+a:active {
+  color: #FC4742;
+}

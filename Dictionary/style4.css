@@ -1,0 +1,15 @@
+.no-radius {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#back{
+    color: #4D8590;
+    font-weight: bold;
+    font-size: 20px;
+}
+#totop{
+    color: #55595C;
+}

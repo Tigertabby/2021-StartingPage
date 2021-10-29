@@ -1,0 +1,66 @@
+body {
+text-align: center;
+background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+}
+
+#level-title {
+  font-family: font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  margin:  5% 5% 2% 5%;
+  color:rgb(237, 236, 218);
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: rgb(240, 113, 247);
+}
+
+.green {
+  background-color: rgb(45, 226, 66);
+}
+
+.blue {
+  background-color: rgb(0, 187, 255);
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+#back{
+    text-decoration: none;
+    font-family: font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    margin: 0, 0, 5%, 0;
+    color: rgb(237, 236, 218);
+}

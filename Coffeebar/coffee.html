@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>At the coffee shop</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/pricing/">
+
+    <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <link rel="stylesheet" href="style3.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+</div>
+<img src="coffee-img.jpg" id="coffee-img" class="img-fluid" alt="coffeeshop">
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4 greeting animate__animated animate__zoomInUp">Welcome to the Coffeeshop! <br> ☺️ Get your drink ☺️ </h1>
+
+  <p class="lead"><a href="#reserves" style="color:#CEA380;"><strong>You might check at first, if drink is available.</strong></a></p>
+  <p>As we do not want to annoy you, the resources are only filled up, when nobody is in the shop.</p>
+
+</div>
+
+
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Espresso</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$ 2.50</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+           <li>ingredients</li>
+          <li>coffee 7 gr</li>
+          <li>water 75 ml</li>
+          <li>Made with Love</li>
+        </ul>
+        <button type="button" id="espresso" onclick="espresso()" class="btn btn-lg btn-block btn-outline-primary">Start your order</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Cappuccino</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$ 2.80</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>ingredients</li>
+          <li>milk 100 ml</li>
+          <li>coffee 14 gr</li>
+          <li>water 250 ml</li>
+        </ul>
+        <button id="cappuccino" onclick="cappuccino()" type="button" class="btn btn-lg btn-block btn-outline-primary">Start your order</button>
+      </div>
+    </div>
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Latte</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$ 3.20</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>ingredients</li>
+          <li>milk 200 ml</li>
+          <li>coffee 7 gr</li>
+          <li>water 50 ml</li>
+        </ul>
+        <button id="latte" onclick="latte()"type="button" class="btn btn-lg btn-block btn-outline-primary">Start your order</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="font-weight-normal my-0 font-weight-strong animate__animated animate__repeat-3 animate__flash">Special offer: White Chocolate with Baileys</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">$ 5.10</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>ingredients</li>
+          <li>Baileys 25 ml</li>
+          <li>milk 250 ml</li>
+          <li>white chocolate 30 gr</li>
+         </ul>
+        <button id="choco" onclick="choco()"type="button" class="btn btn-lg btn-block btn-primary">Go for the special offer!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div class="row">
+        <div class="col-6 col-md">
+           <p ><a href="../Games/Movie/Entree/entree.html" >Go back to the Entrée...</a></p>
+           <p ><a href="../Games/game.html" >Go back to your game...</a></p>
+           <p ><a href="../Macro/macro.html" >Go back to the Café...</a></p>
+        <h5 id="reserves">Still available Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Milk</a></li>
+          <li><a class="text-muted" href="#">Water</a></li>
+          <li><a class="text-muted" href="#">Coffee</a></li>
+          <li><a class="text-muted" href="#">Chocolate</a></li>
+           <li><a class="text-muted" href="#">Baileys</a></li>
+        </ul>
+      </div>
+
+      </div>
+
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script src="coffee.js"></script>
+  </body>
+</html>

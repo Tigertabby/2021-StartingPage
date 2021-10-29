@@ -1,0 +1,29 @@
+body {
+    margin: 3em 9em 9em;
+    background-color: #0c0e0f;
+    font-family: 'Bangers', cursive;
+    font-family: 'Russo One', sans-serif;
+}
+.img-left {
+    float: left;
+    margin-right: 1em;
+
+}
+
+.img-right{
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 3em;
+
+}
+.container {
+    margin: 100px;
+}
+
+p {
+   color: #F7DDA2;
+   font-size: 1.5rem;
+}
+.back {
+    color: #F7DDA2;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+            <title>Movie Info</title>
+        <style>
+            body{
+                background-color: #8C989C;
+            }
+            .popup {
+                padding: 10px;
+                font-family: cursive;
+                border: 2px solid white;
+                text-align: center;
+                cursor: pointer;
+                width: 400px;
+                color: white;
+                font-size: 2rem;
+            }
+
+            .close {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                background-color: black;
+                color: white;
+                font-size: 0.8em;
+            }
+
+            .output {
+                position: absolute;
+                background-image: url('redsocks.png');
+                background-repeat: no-repeat;
+                background-color: #5F4A4B;
+                left: 25%;
+                width: 50%;
+                top: 1%;
+                padding: 10px;
+                border: 1px solid black;
+                min-height: 55%;
+                color: #fff;
+                font-size: 2rem;
+            }
+            .output:hover {
+                background-image: url('sea.jpg');
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            .message {
+                text-align: center;
+                font-family: sans-serif;
+                margin-top: 20px;
+            }
+
+            .hide {
+                display: none;
+            }
+            .hint {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="output hide">
+            <button class="close">close</button>
+            <div class="message">No Content Yet</div>
+        </div>
+        <div>
+          <img width="420" src="beatle.jpg">
+        </div>
+        <div class="popup" data-message="In just 97 days Jane Fortesque managed to drive around the world in her litte beatle.">Around the world in a Beatle</div>
+        <div class="popup" data-message="An adventure trip from Dublin through Europe, Asia, Africa, South-, Middle- and North-America. Being bored of life, the teenager stole her grandma's car and realised a trip on her own which is just incredible. While the first days through Europe seem to be a relaxing journey, Jane gets into deep troubles when being accused in Russia of being a spy. Now her beatle becomes her life insurance which has to run for her life.">Plot</div>
+
+        <div class="popup" data-message="Main actors: Yulia Hazelwood and Greg Lockerbee, produced by the famous Film Factory Sydney in 2018.">Facts & Figures</div>
+        <p class="hint">Click at the item above in which you are interested in. If you want to read the output text clearly, move the mouse over it.</p>
+        <p><a class="hint" href="../gallery.html" role="button">Back to the gallery of old movies &raquo;</a></p>
+         <div>
+          <img width="60%" src="popular.png">
+        </div>
+        <script>
+            const popups = document.querySelectorAll(".popup");
+            const popup = document.querySelector(".output");
+            const popMessage = document.querySelector(".message");
+            const closeButton = document.querySelector(".close");
+            closeButton.addEventListener("click", function () {
+                popup.classList.add("hide");
+            })
+            for (let x = 0; x < popups.length; x++) {
+                console.log(popups[x]);
+                popups[x].addEventListener("click", function () {
+                    let outputText = this.getAttribute("data-message");
+                    message(outputText);
+                })
+            }
+
+            function message(output) {
+                popup.classList.remove("hide");
+                popMessage.innerText = output;
+            }
+        </script>
+    </body>
+
+    </html>
